@@ -1,3 +1,67 @@
 body {
-  font-size: Inter;
+  font-family: Inter;
+  font-size: 20px;
+  background-color: rgba(194, 194, 194, 0.62);
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(118, 172, 153, 0.62);
+  min-height: 70px;
+  padding-top: 30px;
+  color: aliceblue;
+}
+
+header a {
+  color: aliceblue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #logo {
+  float: left;
+}
+header h1 {
+  font-size: 26px;
+  margin: 0;
+}
+header nav {
+  float: right;
+}
+header a:hover {
+  color: rgba(66, 136, 155, 0.68);
+  font-weight: bold;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+#intro {
+  min-height: 600px;
+  background: url(./img/2021-software-trends.png) no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+#intro container {
+  padding: 60px auto;
+}
+
+footer {
+  text-align: center;
 }
