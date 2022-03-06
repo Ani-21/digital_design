@@ -3,11 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Обзор веб-технологий</title>
   </head>
   <body>
-    <h1>Обзор веб-технологий: framework</h1>
-    <p>Обзор технологии</p>
+    <header>
+      <div class="container">
+        <div id='logo'>
+          <h1>WebTech</h1>
+        </div>
+      </div>
+      <!-- <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html">Об авторе</a></li>
+          <li><a href="index.html">Контакты</a></li>
+        </ul>
+      </nav> -->
+    </header>
+    <section id="intro">
+      <div class="container">
+        <h1>Обзор веб-технологий: framework</h1> 
+        <p >
+          Современные веб-технологии предоставляют разработчикам неограниченные
+          возможности для реализации своих идей. В этой статье будут рассотрены преимущества фреймворков, их архитектура и самые популярные интрументы</p>
+        </p>
+      </div>
+      </section>
+    <section id="description">
+      <div class='container'>
+        <h1 class='title'>Что такое фрейморки и зачем они нужны?</h1>
+        <p>Фреймворки стали неотъемлемой частью веб-разработки, поскольку стандарты веб-приложений постоянно растут, как и сложность необходимых технологий. Совершенно неразумно изобретать колесо для таких сложных технологий - если предположить, что все это можно изобрести. </p>
+        <figure>
+          <img class="scheme" src="./img/scheme.png" alt="схема">
+          <figcaption>Принцип работы технологии. <a href="https://liquidhub.ru/blogs/blog/chto-takoe-freymvorki" target="_blank">Источник: LiquidHub</a></figcaption>
+        </figure>
+        <p>Вот почему использование фреймворков, одобренных тысячами разработчиков по всему миру, является очень разумным подходом для создания богатых и интерактивных веб-приложений. Веб-приложение имеет бэкенд (сторону сервера) и фронтенд (сторону клиента), поэтому мы обсуждаем как лучшие бэкенд-фреймворки, так и фронтенд-фреймворки.</p> 
+        <h1 class=title>Преимущества фреймворков</h1>
+        <ul class='advantages'>
+          <li><b>Простая отладка и обслуживание</b></li>
+          <p>Большинство языков программирования не придают значения читабельности и сопровождению кода. Однако многие популярные фреймворки для разработки веб-сайтов делают это. Фреймворки рекомендуются для разработки веб-сайтов на заказ, потому что они имеют много общего с простотой отладки и поддержки. В каждом фреймворке есть сообщество разработчиков, поэтому вы можете быть уверены в быстром ответе на любой вопрос.</p>
+          <li><b>Сокращает длину кода</b></li>
+          <p>Если вы используете фреймворки, нет необходимости писать длинные строки кода для добавления стандартных функций на сайт. Фреймворки поставляются с функциями генерации кода, которые способствуют простоте и лаконичности, сокращая время и усилия, необходимые разработчикам. Более того, фреймворки предоставляют инструменты и функции, которые помогают разработчикам автоматизировать регулярные задачи, такие как аутентификация, сопоставление URL, кэширование и т.д.</p>
+          <li><b>Улучшенная безопасность</b></li>
+          <p>Фреймворки предоставляют встроенные функции и механизмы безопасности, которые помогают разработчикам защитить веб-сайты от настоящих и будущих угроз безопасности. Используя фреймворки, программисты могут защитить веб-сайты от различных кибератак, таких как фальсификация данных, DDoS, SQL-инъекции и т. д. Более того, вы можете использовать веб-фреймворки с открытым исходным кодом для создания индивидуальных спецификаций безопасности для веб-сайтов.</p>
+          <li><b>Повышает эффективность кода и возможность повторного использования</b></li>
+          <p>Веб-фреймворки обеспечивают быструю, отзывчивую и эффективную среду кодирования для разработчиков. Кроме того, фреймворки оснащены такими расширенными возможностями, как горячая перезагрузка и живая перезагрузка, что позволяет ускорить циклы разработки. Кроме того, при использовании веб-фреймворков разработчикам не нужно писать сложные или многострочные коды. Вместо этого они могут использовать предопределенную кодовую базу для внесения простых изменений и легкой загрузки. </p>
+        </ul>
+        <h2>13 лучших фреймворков для веб-разработки</h2>
+        <p>Front-end фреймворки являются одним из главных аспектов процесса веб-дизайна и разработки. Эти фреймворки определяют эстетику, визуальную привлекательность и пользовательский опыт вашего веб-приложения. В то же время существует множество вариантов.  Чтобы облегчить вам задачу, мы перечислили тринадцать лучших front-end фреймворков для 2022 года.</p>
+        <ol>
+          <li><a href="https://angular.io/docs " target="_blank"> Angular</a></li>
+          <li><a href="https://reactjs.org/docs/getting-started.html " target="_blank">React</a></li>
+          <li><a href="https://vuejs.org/ " target="_blank"> Vue.js</a></li>
+          <li><a href="https://emberjs.com/ " target="_blank"> Ember.js</a></li>
+          <li><a href="https://backbonejs.org/ " target="_blank"> Backbone.js</a></li>
+          <li><a href="https://svelte.dev/docs " target="_blank"> Svelte</a></li>
+          <li><a href="https://preactjs.com/ " target="_blank"> Preact</a></li>
+          <li><a href="https://lit.dev/docs/v1/ " target="_blank"> LitElement</a></li>
+          <li><a href="https://alpinejs.dev/ " target="_blank"> Alpine.js</a></li>
+          <li><a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0 " target="_blank"> ASP.NET Core</a></li>
+          <li><a href="https://api.jquery.com/ " target="_blank"> JQuery</a></li>
+          <li><a href="https://semantic-ui.com/introduction/getting-started.html " target="_blank"> Semantic UI</a></li>
+          <li><a href="https://get.foundation/sites/docs/ " target="_blank"> Foundation</a></li>
+        </ol>
+      </div>
+    </section>
+    <button onclick='topFunction()' id="btnTop">наверх</button>
+    <footer>
+      <div class='info'>
+        <p>© Квиквиния Ани 2022</p>
+        <p><a href="mailto:kvikviniya2111@gmail.com">kvikviniya2111@gmail.com</a></p>
+      </div>
+    </footer>
+    <script src='index.js'></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!-- полезные источники: https://developer.mozilla.org/ru/docs/Web -->
