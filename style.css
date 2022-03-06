@@ -26,6 +26,10 @@ p {
   font-size: 25px;
 }
 
+figcaption {
+  font-size: 13px;
+}
+
 #btnTop {
   display: none;
   position: fixed;
@@ -79,7 +83,12 @@ header a:hover {
   width: 60%;
   overflow: hidden;
 }
-
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 60px;
+}
 #intro {
   min-height: 600px;
   background: url(./img/web-developers-belgaum14.jpeg) no-repeat 0 -600px;
@@ -105,13 +114,24 @@ header a:hover {
 
 footer {
   text-align: center;
-  display: flex;
+  /* display: flex; */
   min-height: 70px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.info p {
+  margin: 10px;
 }
 
 footer a {
   text-decoration: none;
   color: black;
+}
+
+.scheme {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -122,6 +142,11 @@ footer a {
 
   .container {
     width: 80%;
+  }
+
+  .title {
+    margin: 40px 10px;
+    letter-spacing: 1px;
   }
 
   header h1 {
@@ -146,7 +171,13 @@ footer a {
   #intro {
     background: url(./img/web-developers-belgaum14.jpeg) no-repeat 0 -200px;
   }
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+  #intro {
+    background: url(./img/web-developers-belgaum14.jpeg) no-repeat 0 -150px;
+  }
   .container {
-    width: 70%;
+    width: 60%;
   }
 }
