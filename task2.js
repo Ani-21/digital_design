@@ -1,22 +1,22 @@
 "use strict";
 
-const date = new Date("2021-01-01");
-console.log(date);
-// const day = date.getDate();
-// const week = parseInt((date.getDate() + date.getDay()) / 7);
-
-// console.log(date.getDate());
-console.log(date.getDay());
-// console.log(week);
+/*
+Необходимо разработать функцию getDayInfo(date), которая возвращает информацию о
+выбранной дате.
+Результатом функции должен быть форматированный текст:
+<день недели>, <номер недели> неделя <месяц> <год> года
+Пример:
+getDayInfo(“01.01.2022”) //  Суббота, 1 неделя Января 2022 года
+getDayInfo(“15.12.2021”) //  Среда, 3 неделя Декабря 2021 года
+*/
 
 function getDayInfo(dateString) {
-  const arr = dateString.split("-");
   const months = [
     "Января",
     "Февраля",
     "Марта",
     "Апреля",
-    "Майя",
+    "Мая",
     "Июня",
     "Июля",
     "Августа",
@@ -25,15 +25,19 @@ function getDayInfo(dateString) {
     "Ноября",
     "Декабря",
   ];
-  const date = new Date(dateString);
+  const newDateString = dateString.split(".").reverse().join("-");
+  const date = new Date(newDateString);
   let day = date.getDay();
   let dayOfWeek;
-  const week = parseInt((date.getDate() + date.getDay()) / 7);
-  //   const month = months[1];
+  let week = parseInt((date.getDate() + date.getDay()) / 7 + 1);
+  console.log(week);
   let month = months[date.getMonth()];
-  const year = date.getFullYear();
+  let year = date.getFullYear();
 
   switch (day) {
+    case 0:
+      dayOfWeek = "Воскресенье";
+      break;
     case 1:
       dayOfWeek = "Понедельник";
       break;
@@ -52,20 +56,9 @@ function getDayInfo(dateString) {
     case 6:
       dayOfWeek = "Суббота";
       break;
-    case 7:
-      dayOfWeek = "Воскресенье";
-      break;
   }
   console.log(`${dayOfWeek}, ${week} неделя ${month} ${year} года`);
-  console.log(arr);
+  console.log(newDateString);
 }
 
-getDayInfo("2022-01-01");
-
-// Необходимо разработать функцию getDayInfo(date), которая возвращает информацию о
-// выбранной дате.
-// Результатом функции должен быть форматированный текст:
-// <день недели>, <номер недели> неделя <месяц> <год> года
-// Пример:
-// getDayInfo(“01.01.2022”) // =&gt; Суббота, 1 неделя Января 2022 года
-// getDayInfo(“15.12.2021”) // =&gt; Среда, 3 неделя Декабря 2021 года
+getDayInfo("07.03.2022");
