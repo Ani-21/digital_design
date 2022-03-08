@@ -30,7 +30,6 @@ function getDayInfo(dateString) {
   let day = date.getDay();
   let dayOfWeek;
   let week = parseInt((date.getDate() + date.getDay()) / 7 + 1);
-  console.log(week);
   let month = months[date.getMonth()];
   let year = date.getFullYear();
 
@@ -58,7 +57,6 @@ function getDayInfo(dateString) {
       break;
   }
   console.log(`${dayOfWeek}, ${week} неделя ${month} ${year} года`);
-  console.log(newDateString);
 }
 
 getDayInfo("07.03.2022");
